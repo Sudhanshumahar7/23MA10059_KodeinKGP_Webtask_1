@@ -1,0 +1,309 @@
+body{
+    background-color: #ADD8E6;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Navigation*/
+.nav_bar{
+    background-color: #008080;
+}
+.Logo{
+    display: inline;
+    font-size: 30px;
+}
+.logoImg{
+    height: 30px;
+    width: 50px;
+}
+.navSections{
+    display: inline-block;
+}
+.navSectionsName{
+    display: inline;
+    margin-left: 100px;
+}
+.Search{
+    background-color: white;
+    width: 500px;
+    border: 2px solid black;
+    margin-left: 330px;
+}
+.sectionsLink{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+.sectionsLink:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+.login:hover{
+    color: white;
+}
+/*Home*/
+#Home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.coverPageImage{
+    height: 500px;
+    width: 500px;
+    padding-top: 40px;
+    animation: slideFromRight 1s ease-out forwards;
+}
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+.buttonForBestSellerSectionbutton{
+    border: 2px solid black;
+    height: 30px;
+    width: 90px;
+    border-radius: 10%;   
+    margin-top: 20px;
+    animation: slideFromLeft 1s ease-out forwards;
+}
+.buttonForBestSellerSectionbutton:hover{
+    border: 3px solid white;
+    font-weight: 600;
+}
+.bookStoreName{
+    text-decoration: underline;
+    font-size: 84px;
+    margin-bottom: 5px;
+    animation: slideFromLeft 1s ease-out forwards;
+}
+.subtitle{
+    text-transform: uppercase;
+    animation: slideFromLeft 1s ease-out forwards;
+}
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}
+
+/*Best Selling Books*/
+.headingBestSellingBooks{
+    background-color: #008080;
+    text-align: center;
+    font-size: 63px;
+}
+.booksTop,.booksMiddle,.booksBottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.booksTop,.booksBottom{
+    animation: slideFromLeft 1s ease-out forwards;
+}
+.booksMiddle{
+    animation: slideFromRight 1s ease-out forwards
+}
+
+.bookImg{
+    height: 500px;
+    width: 350px;
+}
+.book{
+    padding: 5px 5px 5px 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out
+}
+#discoutPrice,#discout,#mrp,#M_R_P{
+    display: inline;
+}
+#discoutPrice{
+    font-weight: 600;
+    font-size: 25px;
+}
+#mrp{
+    text-decoration: line-through;
+}
+.bookDetails{
+    display: none;
+}
+.bookDetials:hover{
+    color: black;
+}
+.book:hover .bookDetails{
+    display:block;
+    color: black;
+}
+.book:hover{
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.buy,.addToCart{
+    margin-right: 25px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.buy:hover,.addToCart:hover{
+    font-weight: 600;
+    
+}
+/* Our Recommendation Section */
+.headingOfRecommendationSection{
+    background-color: #008080;
+    text-align: center;
+    font-size: 63px;
+    margin-bottom: 10px;
+}
+.searchRecommendationSection{
+    background-color: white;
+    width: 1000px;
+    border: 2px solid black;
+    height: 25px;
+    border-radius: 8px;
+    margin-left: 230px;
+}
+.searchRecommendationSection {
+    background: url(./Assests/images.png) no-repeat left center;
+    padding-left: 30px;
+    background-size: 20px;
+    background-color: white;
+}
+
+.searchRecommendationSection:hover{
+    border-width: 3px;
+}
+/*Review Section*/
+.headingOfReviewSection{
+    background-color: #008080;
+    text-align: center;
+    font-size: 63px;
+    margin-bottom: 10px;
+}
+.reviewsByPeople{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.imgOfPerson{
+    display:inline;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    position: relative;
+    top: 7px;
+    left: 4px;
+}
+.nameOfPerson{
+    display: inline;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.reviewOfPerson{
+    border: 2px solid black;
+    width: 300px;
+    border-radius: 8px;
+    padding-left: 7px
+}
+.formForReview{
+    text-align: center;
+    border: 3px solid grey;
+}
+.formForReview {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.formForReview form {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameOfReviewer,
+.emailOfReviewer,
+.reviewOfReviewer {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formForReview input[type="text"],
+.formForReview input[type="email"],
+.formForReview textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formForReview textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.formForReview button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5c6bc0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formForReview button:hover {
+    background-color: #3f51b5;
+}
+
+/*Contact Us*/
+#contactUs{
+    background-color: #008080;
+}
+.headingOfContactUs{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.listOfContactDetails{
+    display: flex;
+    justify-content: center;
+}
+.iconForContact{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+}
+#icon{
+    color: black;
+}
+.Copyright{
+    text-align: center;
+}
+.Back{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.Back:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
